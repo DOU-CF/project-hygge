@@ -1,0 +1,33 @@
+# 編輯器
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 系統檔案
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 日誌
+*.log
+npm-debug.log*
+
+# 依賴套件（如果之後加入）
+node_modules/
+
+# 建置產出
+dist/
+build/
+
+# 環境變數
+.env
+.env.local
+
+# 暫存檔案
+*.tmp
+.cache/
+
+# 忽略 node_modules
+node_modules/
+

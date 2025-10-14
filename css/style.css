@@ -1,0 +1,43 @@
+/* css/style.css */
+
+/* ===== CSS 變數設定（方便之後切換深色模式） ===== */
+:root {
+  --primary-color: #6b9bd1;
+  --secondary-color: #f4a261;
+  --bg-color: #fafafa;
+  --card-bg: #ffffff;
+  --text-coloe: #e2e8f0;
+  --border-color: #e2e8f0;
+  --success-color: #48bb78;
+  --warning-color: #f6ad55;
+  --error-color: #f56565;
+
+  /* 間距 */
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  /* 圓角 */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+
+  /* 陰影 */
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== 全域樣式 ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Microsoft JhengHei", "Segoe UI", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}

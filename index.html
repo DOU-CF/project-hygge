@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hygge - 你的舒適工作區</title>
+
+    <!-- 引入 Iconify 的 Script  -->
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- 自定義 CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/window-system.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand">Hygge</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target=""
+          #navbarNav
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul>
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">首頁</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tools">效率工具</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pomodoro">
+                <span class="iconify" data-icon="arcticons:pomodoro"></span>
+                番茄鐘</a
+              >
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#notes">筆記</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 主要內容區 -->
+    <main class="containe my-5r">
+      <h1 class="text-center mb-5">歡迎來到 Hygge</h1>
+
+      <!-- 小工具區域 - use Grid System -->
+      <div class="row g-4">
+        <!-- 待辦清單 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">待辦清單</h5>
+              <p class="card-text">管理你的每日任務</p>
+              <!-- 之後會加入實際功能 -->
+            </div>
+          </div>
+        </div>
+
+        <!-- 蕃茄鐘 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">蕃茄鐘</h5>
+              <p class="card-text">專注工作，提升效率</p>
+              <!-- 目標功能：
+
+時間計算背景處理
+UI設定頁面(暫停,開始,停止,重新計算)
+番茄鐘商業邏輯(根據維基百科)
+決定待完成的任務
+設定番茄工作法定時器至 n 分鐘（通常為25分鐘）。
+持續工作直至定時器提示,記下一個x。
+短暫休息3-5分鐘。
+每四個x，休息15-30分鐘。
+番茄鐘記錄管理
+利用option page去設計一個休息頁面 -->
+            </div>
+          </div>
+        </div>
+
+        <!-- 天氣 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">天氣資訊</h5>
+              <p class="card-text">今日天氣</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 飲水紀錄 -->
+      <!-- 筆記 -->
+      <!-- 週計畫與甘特圖 -->
+    </main>
+
+    <!-- 左側工具列 -->
+    <aside class="toolbar">
+      <button class="tool-btn" data-component="pomodoro" title="蕃茄鐘">
+        🍅
+      </button>
+      <button class="tool-btn" data-component="todo" title="待辦清單">✓</button>
+      <button class="tool-btn" data-component="notes" title="筆記">📝</button>
+      <button class="tool-btn" data-component="gantt" title="甘特圖">📊</button>
+    </aside>
+
+    <!-- 主畫布 -->
+    <main class="canvas" id="workspace">
+      <!-- 視窗將動態生成在這裡 -->
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- 自定義 JS -->
+    <script src="js/main.js"></script>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
